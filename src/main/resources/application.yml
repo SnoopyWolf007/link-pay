@@ -1,0 +1,28 @@
+# 应用服务 WEB 访问端口
+server:
+  port: 8090
+
+mybatis:
+  configuration:
+    tyttyun:
+      map-underscore-to-camel-case: true
+
+spring:
+  datasource:
+    link:
+      jdbcUrl: jdbc:mysql://127.0.0.1:3306/link_pay?serverTimezone=Asia/Shanghai&useUnicode=true&zeroDateTimeBehavior=convertToNull&autoReconnect=true&characterEncoding=utf-8&useSSL=false
+      username: root
+      password: 123456
+      driver-class-name: com.mysql.jdbc.Driver
+#  redis:
+#    host: 124.223.207.119
+#    password: "qmt2022..."
+#    lettuce:
+#      pool:
+#        max-active: 16
+#    port: 6379
+
+
+logging:
+  level:
+    com.link: debug
